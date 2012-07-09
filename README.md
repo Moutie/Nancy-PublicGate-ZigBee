@@ -3,7 +3,12 @@ Nancy-PublicGate (ZigBee)
 
 This package represente a ZigBee GATE implementation of PALGate over the ROS System. 
 
-The gate description is available on: Nancy-PublicGate-ZigBee/Specification  
+The gate description is available on:
+Nancy-PublicGate-ZigBee/Specification  
+
+-------
+Specification
+
 
 * Data structure:
 	Description of Zigbee Data trasmitted by the Gate through the ROS encapsulation messages.
