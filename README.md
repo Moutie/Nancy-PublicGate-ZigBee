@@ -19,6 +19,29 @@ Specification
 * Getting Started with Zigbee Gate (Publisher):
 	Description of operating mode of Nancy_Zigbee_Gate
 
+------
+Tutorial
+
+Data Structure file: Nancy-PublicGate-ZigBee/GATE_ZigBee/msg/ZigbeeFrame.msg
+
+show message structure with ROS:
+> root@rosserver:~$ rosmsg show ZigbeeFrame
+
+Gate location: Nancy-PublicGate-ZigBee / GATE_ZigBee / bin / GATEZigbee_pub
+
+run the gate with ROS:
+> root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_pub nancy capID 15min
+> root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_pub help
+
+Client location: Nancy-PublicGate-ZigBee / GATE_ZigBee / bin / GATEZigbee_sub
+
+run the client with ROS:
+> root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_sub cap12
+
+
+
+
+
 
 
 
