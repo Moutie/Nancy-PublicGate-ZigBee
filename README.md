@@ -31,6 +31,7 @@ Gate location: Nancy-PublicGate-ZigBee / GATE_ZigBee / bin / GATEZigbee_pub
 
 run the gate with ROS:
 > root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_pub nancy capID 15min
+
 > root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_pub help
 
 Client location: Nancy-PublicGate-ZigBee / GATE_ZigBee / bin / GATEZigbee_sub
