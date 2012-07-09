@@ -1,54 +1,18 @@
-Nancy-PublicGate-ZigBee
-=======================
+Nancy-PublicGate (ZigBee)
+=========================
 
-Included Modules :
+This package represente a ZigBee GATE implementation of PALGate over the ROS System. 
 
-*MSG structure "ZigbeeFrame"
-----------------------------
+The gate description is available on: Nancy-PublicGate-ZigBee/Specification  
 
-Nancy-PublicGate-ZigBee / GATE_ZigBee / msg / ZigbeeFrame.msg
+* Data structure:
+	Description of Zigbee Data trasmitted by the Gate through the ROS encapsulation messages.
 
-[GATE_ZigBee/ZigbeeFrame]:
-uint32 seq          	// Frame ID
-time stamp		        // TimeStampt
-string capid		      // sensor ID
-string caplocation	  // Sensor location ID
-string sensvals		    // Sensors values:  Var01#1#Var8#23 
+* Getting Started with Client API of Zigbee Gate:
+	Tutoriel demonstrates simple receipt of messages from a zigbee Gate over the PALGate system.
 
-*Exec Files:  "GATEZigbee_pub" 
-------------------------------
-
-Nancy-PublicGate-ZigBee / GATE_ZigBee / bin / GATEZigbee_pub
-
-Exemple to exec Zigbee Gate:
->root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_pub nancy capID 15min
-
-
->root@rosserver:~$ rosrun GATE_ZigBee GATEZigbee_pub help
-
-[ROS_ZIGBEE_PUBLISHER] Command Line Structure:
-
-Structure:
-  [Node_name] [Publisher_type: ALL | capID | locationID] [#Init_period: optionnal]
-
-Commands:
-	[Node_Name]         Name of the node publishing ZigBee Data.
-
-	[Publisher_type]    Type of publishing Topics of ZigBee Data:
-	                     - ALL :        One Topic containt all ZigBee Data.
-	                     - capID :      Dynamic Topic by capteur ID.
-	                     - locationID : Dynamic Topic by Location ID.
-
-	                    //Type [rostopic list -v] to print information about active topics
-
-	[#Init_period]      Period of initialising the list of the actif publishers (Topics)
-	                    unuseless with Publisher_type: ALL.
-
-	                    Allowed period value:
-	                    1min | 5min | 15min | 30min | 1hour | 2hour | 1day.
-
-	Author:	Moutie CHEHAIDER
-
+* Getting Started with Zigbee Gate (Publisher):
+	Description of operating mode of Nancy_Zigbee_Gate
 
 
 
